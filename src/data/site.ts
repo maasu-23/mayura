@@ -8,12 +8,13 @@
 export const site = {
   name: 'Mayura',
   tagline: 'Residential Interior & Renovation, Customised to You',
-  city: 'Chennai',
+  /** The business covers the whole state, not a single city. */
+  region: 'Kerala',
 
   hero: {
     // Word-by-word reveal splits on whitespace, so keep this as one string.
     headline: 'Mayura — Residential Interior & Renovation, Customised to You',
-    sub: 'We design and build homes in Chennai. Two services, one standard of finish, every detail decided with you.',
+    sub: 'We design and build homes across Kerala. Two services, one standard of finish, every detail decided with you.',
     cta: 'Book Free Consultation',
   },
 
@@ -31,15 +32,22 @@ export const site = {
     { label: 'Email', value: 'hello@example.com', href: 'mailto:hello@example.com' },
   ],
 
-  // TODO: confirm the actual service areas within Chennai.
+  // All fourteen districts — the business covers the whole state.
+  // TODO: trim this if any district is not actually served.
   serviceAreas: [
-    'Adyar',
-    'Anna Nagar',
-    'Velachery',
-    'T. Nagar',
-    'OMR',
-    'Porur',
-    'Nungambakkam',
-    'Thoraipakkam',
+    'Thiruvananthapuram',
+    'Kollam',
+    'Pathanamthitta',
+    'Alappuzha',
+    'Kottayam',
+    'Idukki',
+    'Ernakulam',
+    'Thrissur',
+    'Palakkad',
+    'Malappuram',
+    'Kozhikode',
+    'Wayanad',
+    'Kannur',
+    'Kasaragod',
   ],
 } as const;

@@ -71,7 +71,7 @@ export function ClosingCTA() {
 
         <div className="relative">
           <p className="mb-5 text-xs uppercase tracking-[0.28em] text-peacock-glow">
-            {site.name} — {site.city}
+            {site.name} — {site.region}
           </p>
 
           <h2 className="font-display text-3xl leading-tight tracking-tighter text-cream sm:text-5xl">

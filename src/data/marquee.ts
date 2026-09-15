@@ -11,7 +11,7 @@ export const servicesMarquee = [
   'Electrical & Plumbing',
 ];
 
-/** Row 2 — where we work. Scrolls right (reversed). */
+/** Row 2 — where we work: every district in Kerala. Scrolls right (reversed). */
 export const areasMarquee = [...site.serviceAreas];
 
 /** Used on the portfolio cards as style tags. */

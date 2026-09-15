@@ -30,10 +30,16 @@ export default function App() {
         <PortfolioGrid />
 
         {/* Same component, mirrored direction and a different keyword set. */}
+        {/*
+          Duration is tuned to the track width, not picked for its own sake:
+          the fourteen Kerala district names make this track ~1.7x the services
+          row, so an equal duration would scroll it at roughly twice the speed.
+          58s keeps both rows reading at a similar pace.
+        */}
         <Marquee
           items={areasMarquee}
-          label="Areas we serve in Chennai"
-          duration={30}
+          label="Districts we serve across Kerala"
+          duration={58}
           reverse
         />
 

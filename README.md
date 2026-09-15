@@ -1,4 +1,4 @@
-# Mayura — Interior & Renovation, Chennai
+# Mayura — Interior & Renovation, Kerala
 
 Single-page portfolio and enquiry site. Built from the "Interior Store Website —
 Build Brief": one long scroll, five sections, no routing.

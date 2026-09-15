@@ -67,7 +67,7 @@ export function Hero() {
           transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
           className="mb-6 text-xs uppercase tracking-[0.28em] text-peacock-glow"
         >
-          Interior &amp; Renovation — {site.city}
+          Interior &amp; Renovation — {site.region}
         </motion.p>
 
         <WordReveal
