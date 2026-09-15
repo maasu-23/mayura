@@ -30,12 +30,12 @@ export function ProjectCard({ project, index, breathing }: Props) {
           : undefined
       }
     >
-      <div className="relative aspect-[4/3] overflow-hidden">
+      <div className="relative aspect-[16/10] overflow-hidden">
         <PlaceholderImage
           scene={project.scene}
           src={project.src}
           alt={`${project.title} — ${project.room}`}
-          tag={project.src ? null : 'Illustration'}
+          tag={project.completed ? null : project.src ? 'Concept render' : 'Illustration'}
         />
 
         {/* Per the brief: never imply unbuilt work is a finished project. */}

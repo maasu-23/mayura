@@ -11,9 +11,12 @@ import { WordReveal } from './WordReveal';
  * "before"; the upper "after" layer is clipped to a soft circle that follows
  * the pointer — so moving across the hero reveals the transformation itself.
  *
- * TODO: replace both placeholders with a real before/after pair, shot from the
- * same position with the same crop. If no completed project is available, an
- * AI render is acceptable — but it must keep a visible "Concept render" tag.
+ * TODO: the two images are currently DIFFERENT ROOMS. The effect only fully
+ * works when both are the same room from the same camera position — generate
+ * the "after" by inpainting furniture into `/hero/before.webp` with the walls,
+ * window and floor masked off, rather than generating a second room. Until then
+ * the reveal reads as a warm space bleeding through a derelict one, which is
+ * passable but not the intended illusion.
  */
 export function Hero() {
   const reduced = usePrefersReducedMotion();
@@ -28,7 +31,8 @@ export function Hero() {
       <div className="absolute inset-0">
         <PlaceholderImage
           scene="before"
-          tag="Before — illustration"
+          src="/hero/before.webp"
+          tag="Before — concept render"
           alt="A room before renovation"
         />
       </div>
@@ -36,7 +40,8 @@ export function Hero() {
       <div className="hero-reveal absolute inset-0 gpu">
         <PlaceholderImage
           scene="after"
-          tag="After — illustration"
+          src="/hero/after.webp"
+          tag="After — concept render"
           alt="The same room after renovation"
         />
       </div>

@@ -43,7 +43,7 @@ export function ClosingCTA() {
         className="absolute inset-x-0 -top-[14%] h-[128%] gpu"
       >
         {/* TODO: replace with one wide, warm, finished-interior photograph. */}
-        <PlaceholderImage scene="after" tag="Placeholder" alt="" />
+        <PlaceholderImage scene="after" src="/cta/interior-wide.webp" tag={null} alt="" />
       </motion.div>
 
       {/* Fades the image into the section above, so there is no hard seam. */}

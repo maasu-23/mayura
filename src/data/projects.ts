@@ -23,7 +23,12 @@ export type Project = {
 };
 
 /**
- * TODO: replace wholesale with real projects as photography is delivered.
+ * Images are AI concept renders, not completed work — hence `completed: false`
+ * on every entry, which drives both the "Sample Style" badge and the
+ * "Concept render" tag. Flip an entry to `completed: true` only once the
+ * project is genuinely built and photographed.
+ *
+ * TODO: replace the renders with real photography as it is delivered.
  *
  * This array is the ONLY thing that changes when real content arrives. The grid,
  * the cards, and every animation are built against this shape and need no edits.
@@ -31,6 +36,7 @@ export type Project = {
 export const projects: Project[] = [
   {
     id: 'living-warm-minimal',
+    src: '/projects/living-warm-minimal.webp',
     room: 'Living Room',
     title: 'Warm Minimal',
     description:
@@ -41,6 +47,7 @@ export const projects: Project[] = [
   },
   {
     id: 'kitchen-modular-galley',
+    src: '/projects/kitchen-modular-galley.webp',
     room: 'Modular Kitchen',
     title: 'Galley, Rebuilt',
     description:
@@ -51,6 +58,7 @@ export const projects: Project[] = [
   },
   {
     id: 'bedroom-quiet-scandi',
+    src: '/projects/bedroom-quiet-scandi.webp',
     room: 'Master Bedroom',
     title: 'Quiet Scandinavian',
     description:
@@ -61,6 +69,7 @@ export const projects: Project[] = [
   },
   {
     id: 'bath-renovation-stone',
+    src: '/projects/bath-renovation-stone.webp',
     room: 'Bathroom',
     title: 'Stone & Brass',
     description:
@@ -71,6 +80,7 @@ export const projects: Project[] = [
   },
   {
     id: 'study-industrial-nook',
+    src: '/projects/office-industrial-nook.webp',
     room: 'Home Office',
     title: 'The Work Nook',
     description:
@@ -81,6 +91,7 @@ export const projects: Project[] = [
   },
   {
     id: 'dining-false-ceiling',
+    src: '/projects/dining-false-ceiling.webp',
     room: 'Dining',
     title: 'Light From Above',
     description:

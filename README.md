@@ -48,14 +48,18 @@ brief, unbuilt work must never be presented as a finished project.
 
 ### Images
 
-`PlaceholderImage` renders a CSS gradient whenever `src` is absent, so the repo
-carries no binary assets. Pass a real `src` and it renders an `<img>` instead —
-no other change needed.
+Every image in the site is currently an **AI concept render**, tagged as such on
+the page. `PlaceholderImage` falls back to `RoomScene` — a hand-drawn SVG
+interior — whenever `src` is absent, so the site still renders with no assets at
+all.
 
-The hero needs a **before/after pair of the same room, same crop**: that is what
-the cursor-following mask reveals. Wire them up in `src/components/Hero.tsx`.
-If no completed project exists yet, an AI render is acceptable but must keep a
-visible "Concept render" tag.
+Sources live in `public/projects/`, `public/hero/` and `public/cta/` as WebP.
+
+**Known gap:** the hero's before and after are different rooms. The mask reveal
+is meant to show *one* room transforming, which needs both frames shot from the
+same camera position. Generate the after by inpainting furniture into
+`/hero/before.webp` with the walls, window and floor masked off — a separately
+generated room will not line up.
 
 ## Deliberately absent
 
