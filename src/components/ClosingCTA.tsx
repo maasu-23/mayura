@@ -64,7 +64,7 @@ export function ClosingCTA() {
             className="pointer-events-none absolute inset-0 opacity-0 transition-opacity duration-500 group-hover:opacity-100"
             style={{
               background:
-                'radial-gradient(420px circle at var(--spot-x, 50%) var(--spot-y, 50%), rgba(45,212,191,0.16), transparent 65%)',
+                'radial-gradient(420px circle at var(--spot-x, 50%) var(--spot-y, 50%), rgba(74,222,148,0.16), transparent 65%)',
             }}
           />
         )}

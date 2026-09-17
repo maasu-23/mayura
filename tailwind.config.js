@@ -11,11 +11,12 @@ export default {
           card: '#131315',
           cardHi: '#191a1c',
         },
-        // Peacock — the "Mayura" accent.
+        // Peacock — the "Mayura" accent. Moss/emerald green, not the aqua-blue
+        // the first pass shipped with — the client asked for greenish.
         peacock: {
-          DEFAULT: '#0E7C7B',
-          glow: '#2DD4BF',
-          dim: '#0A5C5B',
+          DEFAULT: '#2F6B4F',
+          glow: '#4ADE94',
+          dim: '#1F4A38',
         },
         // Warm brass, for hairlines and secondary accents.
         brass: {
