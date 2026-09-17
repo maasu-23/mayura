@@ -45,13 +45,25 @@ export const site = {
     sub: 'Tell us about the space. We will walk you through what is possible, what it costs, and how long it takes — before you commit to anything.',
   },
 
-  // TODO: replace all four with the store's real contact details.
-  // `href` values are wired straight into the closing CTA.
+  /**
+   * Real details, supplied by the business. `href` values are wired straight
+   * into the closing CTA.
+   *
+   * Phone and WhatsApp are deliberately the same number — it is a mobile, so
+   * it takes both calls and messages, and offering each separately lets people
+   * pick.
+   *
+   * TODO: no Instagram handle yet. Add an entry here once there is one; it was
+   * removed rather than left pointing at a placeholder URL.
+   */
   contacts: [
-    { label: 'Phone', value: '+91 00000 00000', href: 'tel:+910000000000' },
-    { label: 'WhatsApp', value: 'WhatsApp', href: 'https://wa.me/910000000000' },
-    { label: 'Instagram', value: '@mayura', href: 'https://instagram.com/' },
-    { label: 'Email', value: 'hello@example.com', href: 'mailto:hello@example.com' },
+    { label: 'Phone', value: '+91 90378 87921', href: 'tel:+919037887921' },
+    { label: 'WhatsApp', value: 'WhatsApp', href: 'https://wa.me/919037887921' },
+    {
+      label: 'Email',
+      value: 'askatmayurainteriors@gmail.com',
+      href: 'mailto:askatmayurainteriors@gmail.com',
+    },
   ],
 
   // All fourteen districts — the business covers the whole state.
