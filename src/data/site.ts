@@ -18,6 +18,28 @@ export const site = {
     cta: 'Book Free Consultation',
   },
 
+  /**
+   * Supplied by the business. Per the brief's "Do Not Invent" rule, nothing
+   * here may be added without the store confirming it — no homes-completed
+   * count, no team size, no factory square footage.
+   */
+  credentials: {
+    eyebrow: 'Why Mayura',
+    headline: 'Ten years in, with our own factory floor.',
+    items: [
+      {
+        title: '10+ years',
+        body: 'A decade of residential interior and renovation work, across Kerala.',
+      },
+      {
+        title: 'Our own factory',
+        // TODO: confirm exactly what is made in-house — this currently claims
+        // wardrobes, kitchens and joinery, inferred from the service list.
+        body: 'Wardrobes, kitchens and joinery are manufactured in our own factory, so the finish and the timeline stay in our hands.',
+      },
+    ],
+  },
+
   cta: {
     headline: 'Ready to start your renovation?',
     sub: 'Tell us about the space. We will walk you through what is possible, what it costs, and how long it takes — before you commit to anything.',

@@ -1,6 +1,7 @@
 import { MotionConfig } from 'framer-motion';
 
 import { ClosingCTA } from './components/ClosingCTA';
+import { Credentials } from './components/Credentials';
 import { Hero } from './components/Hero';
 import { Marquee } from './components/Marquee';
 import { PortfolioGrid } from './components/PortfolioGrid';
@@ -9,9 +10,10 @@ import { usePrefersReducedMotion } from './hooks/usePrefersReducedMotion';
 import { useSmoothScroll } from './hooks/useSmoothScroll';
 
 /**
- * One long scroll, five sections, no routing — per the build brief.
+ * One long scroll, no routing. The brief specified five sections; the
+ * credentials band was added afterwards at the owner's request.
  *
- * Hero -> Marquee (services) -> Portfolio -> Marquee (areas, reversed) -> CTA
+ * Hero -> Marquee (services) -> Why -> Portfolio -> Marquee (areas) -> CTA
  */
 export default function App() {
   const reduced = usePrefersReducedMotion();
@@ -26,6 +28,9 @@ export default function App() {
         <Hero />
 
         <Marquee items={servicesMarquee} label="Services we offer" duration={38} />
+
+        {/* Claim first, then the portfolio as proof of it. */}
+        <Credentials />
 
         <PortfolioGrid />
 
