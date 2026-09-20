@@ -3,6 +3,7 @@ import { Layout } from './components/Layout';
 import { HomePage } from './pages/HomePage';
 import { WorkPage } from './pages/WorkPage';
 import { FaqPage } from './pages/FaqPage';
+import { AboutPage } from './pages/AboutPage';
 import { useSmoothScroll } from './hooks/useSmoothScroll';
 
 export default function App() {
@@ -14,6 +15,7 @@ export default function App() {
         <Route path="/" element={<HomePage />} />
         <Route path="/work" element={<WorkPage />} />
         <Route path="/faq" element={<FaqPage />} />
+        <Route path="/about" element={<AboutPage />} />
       </Routes>
     </Layout>
   );

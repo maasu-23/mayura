@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { site } from '../data/site';
 
 const LINKS = [
+  { href: '/about', label: 'About' },
   { href: '/work', label: 'Work' },
   { href: '/#process', label: 'Process' },
   { href: '/#why', label: 'Why Mayura' },
