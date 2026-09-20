@@ -17,7 +17,7 @@ export function FillButton({ href, children, className = '', dark = false }: Pro
   return (
     <a
       href={href}
-      className={`group relative inline-flex items-center justify-center overflow-hidden rounded-full border px-8 py-4 text-sm font-medium uppercase tracking-[0.12em] transition-colors duration-300 hover:border-peacock hover:text-paper focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-peacock ${border} ${className}`}
+      className={`group relative inline-flex items-center justify-center overflow-hidden rounded-full border px-10 py-5 text-base font-medium uppercase tracking-[0.12em] transition-colors duration-300 hover:border-peacock hover:text-paper focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-peacock ${border} ${className}`}
     >
       <span
         aria-hidden

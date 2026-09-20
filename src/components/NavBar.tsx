@@ -47,7 +47,7 @@ export function NavBar() {
         </ul>
         <a
           href={site.contacts[1].href}
-          className="rounded-full bg-peacock px-5 py-2 text-sm font-medium text-paper transition-colors hover:bg-peacock-dim"
+          className="rounded-full bg-peacock px-6 py-3 text-sm font-medium text-paper transition-colors hover:bg-peacock-dim"
         >
           {site.hero.cta}
         </a>

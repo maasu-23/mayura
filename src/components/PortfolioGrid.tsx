@@ -20,7 +20,7 @@ export function PortfolioGrid() {
           </div>
           <Link
             to="/work"
-            className="rounded-full border border-line px-6 py-3 text-sm font-medium text-ink transition-colors hover:border-peacock hover:text-peacock-dim"
+            className="rounded-full border border-line px-8 py-4 text-sm font-medium text-ink transition-colors hover:border-peacock hover:text-peacock-dim"
           >
             View All Work
           </Link>
