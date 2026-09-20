@@ -6,7 +6,12 @@ export function Footer() {
       <div className="mx-auto max-w-6xl px-6 py-16">
         <div className="grid grid-cols-1 gap-10 md:grid-cols-3">
           <div>
-            <p className="font-mono text-sm tracking-[0.2em] text-paper">{site.name.toUpperCase()}</p>
+            <div className="flex items-center gap-2">
+              <img src="/mayura-mark.png" alt="" className="h-6 w-6" />
+              <p className="font-mono text-sm tracking-[0.2em] text-paper">
+                {site.name.toUpperCase()}
+              </p>
+            </div>
             <p className="mt-3 max-w-xs text-sm">{site.tagline}</p>
           </div>
 
