@@ -2,7 +2,7 @@ import { howItWorks } from '../data/howItWorks';
 
 export function HowItWorks() {
   return (
-    <section id="process" className="mx-auto max-w-6xl px-6 py-24">
+    <section id="process" className="mx-auto max-w-6xl px-6 py-16">
       <p className="font-mono text-xs uppercase tracking-[0.3em] text-peacock-dim">Process</p>
       <h2 className="mt-3 text-3xl font-semibold text-ink md:text-4xl">
         From first visit to handover

@@ -1,28 +1,20 @@
-import { NavBar } from './components/NavBar';
-import { Hero } from './components/Hero';
-import { PortfolioGrid } from './components/PortfolioGrid';
-import { HowItWorks } from './components/HowItWorks';
-import { Credentials } from './components/Credentials';
-import { Faq } from './components/Faq';
-import { ClosingCTA } from './components/ClosingCTA';
-import { Footer } from './components/Footer';
+import { Routes, Route } from 'react-router-dom';
+import { Layout } from './components/Layout';
+import { HomePage } from './pages/HomePage';
+import { WorkPage } from './pages/WorkPage';
+import { FaqPage } from './pages/FaqPage';
 import { useSmoothScroll } from './hooks/useSmoothScroll';
 
 export default function App() {
   useSmoothScroll();
 
   return (
-    <div className="min-h-screen bg-paper">
-      <NavBar />
-      <main>
-        <Hero />
-        <PortfolioGrid />
-        <HowItWorks />
-        <Credentials />
-        <Faq />
-        <ClosingCTA />
-      </main>
-      <Footer />
-    </div>
+    <Layout>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/work" element={<WorkPage />} />
+        <Route path="/faq" element={<FaqPage />} />
+      </Routes>
+    </Layout>
   );
 }

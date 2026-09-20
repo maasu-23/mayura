@@ -1,11 +1,12 @@
 import { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 import { site } from '../data/site';
 
 const LINKS = [
-  { href: '#work', label: 'Work' },
-  { href: '#process', label: 'Process' },
-  { href: '#why', label: 'Why Mayura' },
-  { href: '#faq', label: 'FAQ' },
+  { href: '/work', label: 'Work' },
+  { href: '/#process', label: 'Process' },
+  { href: '/#why', label: 'Why Mayura' },
+  { href: '/faq', label: 'FAQ' },
 ];
 
 export function NavBar() {
@@ -25,18 +26,18 @@ export function NavBar() {
       }`}
     >
       <nav className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
-        <a href="#top" className="font-mono text-sm font-medium tracking-[0.2em] text-ink">
+        <Link to="/" className="font-mono text-sm font-medium tracking-[0.2em] text-ink">
           {site.name.toUpperCase()}
-        </a>
+        </Link>
         <ul className="hidden gap-8 md:flex">
           {LINKS.map((link) => (
             <li key={link.href}>
-              <a
-                href={link.href}
+              <Link
+                to={link.href}
                 className="text-sm text-ink-dim transition-colors hover:text-ink"
               >
                 {link.label}
-              </a>
+              </Link>
             </li>
           ))}
         </ul>

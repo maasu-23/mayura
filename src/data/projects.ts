@@ -76,5 +76,3 @@ export const projects: Project[] = [
     completed: false,
   },
 ];
-
-export const INITIAL_VISIBLE = 4;

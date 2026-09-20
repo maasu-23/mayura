@@ -15,6 +15,23 @@ export const site = {
     cta: 'Book Free Consultation',
   },
 
+  services: {
+    eyebrow: 'What We Do',
+    headline: 'Two services, one standard of finish',
+    items: [
+      {
+        title: 'Interior Design',
+        body: 'Full-home or single-room interiors — layout, materials, modular furniture and lighting, designed around how you actually use the space.',
+        image: '/projects/bedroom-walnut-slat.jpg',
+      },
+      {
+        title: 'Renovation',
+        body: 'Structural and cosmetic renovation of existing homes — kitchens, bathrooms, false ceilings, and full strip-outs, rebuilt to your brief.',
+        image: '/projects/kitchen-slate-blue.jpg',
+      },
+    ],
+  },
+
   credentials: {
     eyebrow: 'Why Mayura',
     headline: 'Ten years in, with our own factory floor.',

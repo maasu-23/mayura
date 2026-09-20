@@ -1,13 +1,13 @@
 import { useState } from 'react';
 import { faq } from '../data/faq';
 
-export function Faq() {
+export function FaqPage() {
   const [open, setOpen] = useState<number | null>(0);
 
   return (
-    <section id="faq" className="mx-auto max-w-3xl px-6 py-24">
+    <section className="mx-auto max-w-3xl px-6 pb-24 pt-40">
       <p className="font-mono text-xs uppercase tracking-[0.3em] text-peacock-dim">FAQ</p>
-      <h2 className="mt-3 text-3xl font-semibold text-ink md:text-4xl">Questions, answered</h2>
+      <h1 className="mt-3 text-3xl font-semibold text-ink md:text-4xl">Questions, answered</h1>
 
       <div className="mt-10 divide-y divide-line border-y border-line">
         {faq.map((item, i) => {
