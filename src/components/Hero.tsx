@@ -1,15 +1,33 @@
+import { useRef } from 'react';
+import { motion, useScroll, useTransform } from 'framer-motion';
 import { site } from '../data/site';
 import { FillButton } from './FillButton';
 import { GradientBackdrop } from './GradientBackdrop';
 
 export function Hero() {
+  const sectionRef = useRef<HTMLElement>(null);
+  const { scrollYProgress } = useScroll({
+    target: sectionRef,
+    offset: ['start start', 'end start'],
+  });
+  // Image is oversized (130% height, see below) so this range never reveals
+  // an edge — subtle drift, not a full parallax rig.
+  const y = useTransform(scrollYProgress, [0, 1], ['0%', '15%']);
+
   return (
-    <section id="top" className="relative flex min-h-screen items-center overflow-hidden pt-24">
-      <img
-        src="/hero/bedroom-green-wide.jpg"
-        alt=""
-        className="absolute inset-0 h-full w-full object-cover"
-      />
+    <section
+      ref={sectionRef}
+      id="top"
+      className="relative flex min-h-screen items-center overflow-hidden pt-24"
+    >
+      <div className="absolute inset-0 overflow-hidden">
+        <motion.img
+          src="/hero/bedroom-green-wide.jpg"
+          alt=""
+          style={{ y }}
+          className="absolute left-0 top-[-15%] h-[130%] w-full object-cover"
+        />
+      </div>
       <div className="absolute inset-0">
         <GradientBackdrop />
       </div>
@@ -25,7 +43,12 @@ export function Hero() {
       />
       <div className="pointer-events-none absolute inset-x-0 bottom-0 h-32 bg-gradient-to-b from-transparent to-paper" />
 
-      <div className="relative mx-auto max-w-6xl px-6">
+      <motion.div
+        initial={{ opacity: 0, y: 16 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
+        className="relative mx-auto max-w-6xl px-6"
+      >
         <p className="font-mono text-xs uppercase tracking-[0.3em] text-peacock-dim">
           {site.region} · Residential Interiors
         </p>
@@ -36,7 +59,7 @@ export function Hero() {
         <div className="mt-10 flex flex-wrap gap-4">
           <FillButton href={site.contacts[1].href}>{site.hero.cta}</FillButton>
         </div>
-      </div>
+      </motion.div>
     </section>
   );
 }
