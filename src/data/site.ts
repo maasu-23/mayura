@@ -22,12 +22,12 @@ export const site = {
       {
         title: 'Interior Design',
         body: 'Full-home or single-room interiors — layout, materials, modular furniture and lighting, designed around how you actually use the space.',
-        image: '/projects/bedroom-walnut-slat.jpg',
+        image: '/projects/living-room-slat-divider.jpg',
       },
       {
         title: 'Renovation',
         body: 'Structural and cosmetic renovation of existing homes — kitchens, bathrooms, false ceilings, and full strip-outs, rebuilt to your brief.',
-        image: '/projects/kitchen-slate-blue.jpg',
+        image: '/projects/kitchen-dark-glossy.jpg',
       },
     ],
   },
@@ -43,6 +43,22 @@ export const site = {
       {
         title: 'Our own factory',
         body: 'Wardrobes, kitchens and joinery are manufactured in our own factory, so the finish and the timeline stay in our hands.',
+      },
+      {
+        title: 'Unlimited Catalogue',
+        body: 'Browse and choose freely — no restricted product lists, no upsell tiers on materials or finishes.',
+      },
+      {
+        title: 'Quality Checks',
+        body: 'Every stage — materials, fabrication, installation — is inspected before it is signed off.',
+      },
+      {
+        title: '45-Day Move-In',
+        body: 'A committed timeline from confirmed order to move-in, tracked from day one.',
+      },
+      {
+        title: 'Happy Homes',
+        body: 'Real families living in the spaces we have designed and built, across Kerala.',
       },
     ],
   },
@@ -64,6 +80,11 @@ export const site = {
       value: 'askatmayurainteriors@gmail.com',
       href: 'mailto:askatmayurainteriors@gmail.com',
     },
+  ],
+
+  social: [
+    { label: 'Instagram', href: 'https://www.instagram.com/mayura_interiors/?hl=en' },
+    { label: 'Facebook', href: 'https://www.facebook.com/MayuraInterior' },
   ],
 
   serviceAreas: [

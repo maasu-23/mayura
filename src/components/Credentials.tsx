@@ -15,23 +15,23 @@ export function Credentials() {
           </h2>
         </Reveal>
 
-        <div className="mt-12 grid grid-cols-1 gap-8 md:grid-cols-2">
+        <div className="mt-12 grid grid-cols-1 gap-8 lg:grid-cols-[1fr_1.2fr]">
           <Reveal>
-            <div className="overflow-hidden rounded-2xl border border-line">
+            <div className="h-full min-h-[280px] overflow-hidden rounded-2xl border border-line">
               <img
-                src="/projects/wardrobe-pastel-glass.jpg"
+                src="/projects/wardrobe-study-nook.jpg"
                 alt="Joinery made in Mayura's own factory"
                 loading="lazy"
                 className="h-full w-full object-cover"
               />
             </div>
           </Reveal>
-          <div className="flex flex-col gap-6">
+          <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
             {site.credentials.items.map((item, i) => (
-              <Reveal key={item.title} delay={i * 0.1}>
-                <div className="rounded-2xl border border-line bg-paper-hi p-8">
-                  <p className="font-mono text-2xl font-semibold text-peacock">{item.title}</p>
-                  <p className="mt-3 text-ink-dim">{item.body}</p>
+              <Reveal key={item.title} delay={i * 0.08}>
+                <div className="h-full rounded-2xl border border-line bg-paper-hi p-6">
+                  <p className="font-mono text-lg font-semibold text-peacock">{item.title}</p>
+                  <p className="mt-2 text-sm text-ink-dim">{item.body}</p>
                 </div>
               </Reveal>
             ))}

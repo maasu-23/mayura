@@ -22,7 +22,7 @@ export function Hero() {
     >
       <div className="absolute inset-0 overflow-hidden">
         <motion.img
-          src="/hero/bedroom-green-wide.jpg"
+          src="/hero/bedroom-luxury-chandelier.jpg"
           alt=""
           style={{ y }}
           className="absolute left-0 top-[-15%] h-[130%] w-full object-cover"

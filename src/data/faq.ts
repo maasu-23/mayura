@@ -25,7 +25,7 @@ export const faq: Faq[] = [
     a: 'Yes. You get a layout and a materials palette to review before any construction or manufacturing begins.',
   },
   {
-    q: 'Do the portfolio images show completed projects?',
-    a: 'They are 3D design renders produced by our own team, showing a real style we build — not photos of finished work yet, and clearly marked as renders. Ask us directly if you want to see photographs of completed projects.',
+    q: 'What do the portfolio images show?',
+    a: 'Our own design work, showing the styles and finishes we build. Contact us directly if you would like to see specific completed projects.',
   },
 ];

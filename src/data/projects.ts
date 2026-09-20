@@ -5,74 +5,97 @@ export type Project = {
   description: string;
   style: string;
   src: string;
-  /**
-   * False until a genuinely completed, photographed project replaces it.
-   * These are real 3D design renders produced by Mayura's own team (not
-   * AI-generated, not stock) — but they are pre-construction visualizations,
-   * not photos of built work. Controls the "Design Render" badge.
-   */
-  completed: boolean;
 };
 
 export const projects: Project[] = [
   {
-    id: 'living-room-tv-wall',
-    src: '/projects/living-room-tv-wall.jpg',
+    id: 'living-room-slat-divider',
+    src: '/projects/living-room-slat-divider.jpg',
     room: 'Living Room',
-    title: 'Warm TV Wall',
+    title: 'Slat Divider Living',
     description:
-      'A floating media unit with a slatted accent niche and a cove-lit ceiling that washes the room in warm light.',
+      'A fluted-wood TV wall paired with an open lattice room divider, framing the passage through to the next room.',
     style: 'Contemporary',
-    completed: false,
   },
   {
-    id: 'kitchen-slate-blue',
-    src: '/projects/kitchen-slate-blue.jpg',
+    id: 'kitchen-white-black',
+    src: '/projects/kitchen-white-black.jpg',
     room: 'Modular Kitchen',
-    title: 'Slate & Marble',
+    title: 'Black & White U-Kitchen',
     description:
-      'An L-shaped modular kitchen in slate-blue laminate, with a marble-look backsplash and full-height storage.',
+      'A full U-shaped modular kitchen in glossy black uppers and white lowers, with a marble-look backsplash and built-in fridge bay.',
     style: 'Modern',
-    completed: false,
   },
   {
-    id: 'bedroom-walnut-slat',
-    src: '/projects/bedroom-walnut-slat.jpg',
+    id: 'kitchen-dark-glossy',
+    src: '/projects/kitchen-dark-glossy.jpg',
+    room: 'Modular Kitchen',
+    title: 'Dark Glass Kitchen',
+    description:
+      'High-gloss dark cabinetry with a built-in oven and microwave column, finished with a warm wood cornice.',
+    style: 'Modern',
+  },
+  {
+    id: 'bedroom-luxury-chandelier',
+    src: '/projects/bedroom-luxury-chandelier.jpg',
     room: 'Master Bedroom',
-    title: 'Walnut Slat Wall',
+    title: 'Chandelier Suite',
     description:
-      'A fluted walnut headboard wall with twin pendant lights either side, framing a fabric-upholstered bed.',
-    style: 'Modern',
-    completed: false,
+      'A navy upholstered headboard under a sculptural crystal chandelier, framed by walnut wall panelling.',
+    style: 'Luxury',
   },
   {
-    id: 'dining-blue-velvet',
-    src: '/projects/dining-blue-velvet.jpg',
+    id: 'bedroom-moody-marble',
+    src: '/projects/bedroom-moody-marble.jpg',
+    room: 'Master Bedroom',
+    title: 'Moody Marble Suite',
+    description:
+      'A channel-tufted leather headboard set into walnut fluting, against a textured charcoal stone wall.',
+    style: 'Luxury',
+  },
+  {
+    id: 'dining-hexagon-wall',
+    src: '/projects/dining-hexagon-wall.jpg',
     room: 'Dining',
-    title: 'Ring Light Dining',
+    title: 'Hexagon Feature Wall',
     description:
-      'A ten-seater dining table in navy velvet, under a cluster of ring pendant lights against a slatted feature wall.',
+      'A ten-seater dining table under layered ring pendants, with a hexagon-tiled feature wall and a marble display cabinet.',
     style: 'Contemporary',
-    completed: false,
   },
   {
-    id: 'wardrobe-pastel-glass',
-    src: '/projects/wardrobe-pastel-glass.jpg',
+    id: 'wardrobe-study-nook',
+    src: '/projects/wardrobe-study-nook.jpg',
     room: 'Wardrobe',
-    title: 'Pastel & Glass',
+    title: 'Wardrobe & Study Nook',
     description:
-      'A blush-and-mint glass-shutter wardrobe with sculpted pull handles, paired with a mirrored dressing nook.',
+      'Floor-to-ceiling wardrobes in a two-tone finish, with a built-in study nook tucked beside the window.',
     style: 'Contemporary',
-    completed: false,
   },
   {
-    id: 'bedroom-twin-sunburst',
-    src: '/projects/bedroom-twin-sunburst.jpg',
-    room: 'Guest Bedroom',
-    title: 'Twin Bed, Shared Wall',
+    id: 'pooja-unit',
+    src: '/projects/pooja-unit.jpg',
+    room: 'Pooja Unit',
+    title: 'Backlit Pooja Alcove',
     description:
-      'Mirrored twin beds either side of a shared nightstand, with a sunburst wall installation as the room\'s focal point.',
+      'A recessed pooja alcove with jaali-pattern side panels and a backlit mirror strip, finished in warm wood tones.',
+    style: 'Traditional',
+  },
+  {
+    id: 'crockery-display',
+    src: '/projects/crockery-display.jpg',
+    room: 'Crockery Unit',
+    title: 'Hexagon Crockery Wall',
+    description:
+      'An open crockery display against a wood-slat wall, paired with a hexagon-tiled mirror feature and ring pendant lighting.',
     style: 'Contemporary',
-    completed: false,
+  },
+  {
+    id: 'utility-nook',
+    src: '/projects/utility-nook.jpg',
+    room: 'Utility',
+    title: 'Compact Utility Nook',
+    description:
+      'A space-efficient wash area with overhead cabinetry and a herringbone-tiled floor, built into a narrow footprint.',
+    style: 'Minimalist',
   },
 ];

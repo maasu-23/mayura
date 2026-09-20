@@ -6,7 +6,7 @@ export function ClosingCTA() {
   return (
     <section className="relative overflow-hidden bg-ink">
       <img
-        src="/cta/bedroom-warm-wood.jpg"
+        src="/cta/bedroom-moody-marble.jpg"
         alt=""
         className="absolute inset-0 h-full w-full object-cover opacity-30"
       />
