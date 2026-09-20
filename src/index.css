@@ -1,0 +1,79 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    /* Lenis drives scrolling; native smooth-scroll would fight it. */
+    scroll-behavior: auto;
+  }
+
+  body {
+    @apply bg-paper text-ink font-sans antialiased;
+  }
+
+  html.lenis,
+  html.lenis body {
+    height: auto;
+  }
+
+  .lenis.lenis-smooth {
+    scroll-behavior: auto !important;
+  }
+
+  ::selection {
+    @apply bg-peacock-glow text-ink;
+  }
+}
+
+@layer utilities {
+  .gpu {
+    will-change: transform;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
+}
+
+@layer components {
+  /* Soft blurred accent glows, borrowed treatment: a low-opacity peacock
+     blob behind key sections rather than flat color blocks. */
+  .glow-orb {
+    background: radial-gradient(circle, rgba(74, 222, 148, 0.28) 0%, rgba(74, 222, 148, 0) 70%);
+    filter: blur(60px);
+  }
+
+  /* Slow-drifting multi-stop gradient for the hero. Oversized background
+     (400% of the element) so the position animation has room to pan without
+     ever showing a hard edge. */
+  .gradient-backdrop {
+    background: linear-gradient(
+      120deg,
+      rgba(47, 107, 79, 0.2),
+      rgba(74, 222, 148, 0.12),
+      rgba(200, 155, 90, 0.12),
+      rgba(47, 107, 79, 0.2)
+    );
+    background-size: 400% 400%;
+    animation: gradient-pan 18s ease-in-out infinite;
+  }
+}
+
+@keyframes gradient-pan {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
