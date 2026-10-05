@@ -5,6 +5,7 @@ type Props = {
   children: ReactNode;
   className?: string;
   dark?: boolean;
+  solid?: boolean;
 };
 
 /**
@@ -12,8 +13,10 @@ type Props = {
  * rather than the background cross-fading to a new colour. Composites on the
  * GPU via a transform, so it costs nothing to paint.
  */
-export function FillButton({ href, children, className = '', dark = false }: Props) {
-  const border = dark ? 'border-paper/25 text-paper' : 'border-ink/20 text-ink';
+export function FillButton({ href, children, className = '', dark = false, solid = false }: Props) {
+  const border = solid
+    ? 'border-peacock bg-peacock text-paper hover:bg-peacock-dim hover:border-peacock-dim'
+    : dark ? 'border-paper/25 text-paper' : 'border-ink/20 text-ink';
   return (
     <a
       href={href}

@@ -11,8 +11,16 @@ export const site = {
 
   hero: {
     headline: 'Interiors built around how you actually live',
-    sub: 'We design and build homes across Kerala. Two services, one standard of finish, every detail decided with you.',
+    sub: 'We design and build homes across Kerala and now in Chennai. Two services, one standard of finish, every detail decided with you.',
     cta: 'Book Free Consultation',
+  },
+
+  /** Second location. Separate WhatsApp Business number and business name. */
+  chennai: {
+    name: 'Mayura Interiors Chennai',
+    cta: 'Chat with Chennai',
+    phone: '+91 80892 34739',
+    whatsapp: 'https://wa.me/918089234739',
   },
 
   services: {

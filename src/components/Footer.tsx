@@ -54,6 +54,17 @@ export function Footer() {
                 </li>
               ))}
             </ul>
+            <p className="mt-6 font-mono text-xs uppercase tracking-widest text-brass">
+              {site.chennai.name}
+            </p>
+            <a
+              href={site.chennai.whatsapp}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-3 block text-sm transition-colors hover:text-paper"
+            >
+              WhatsApp: {site.chennai.phone}
+            </a>
           </div>
 
           <div>
@@ -61,6 +72,10 @@ export function Footer() {
               Serving all of {site.region}
             </p>
             <p className="mt-3 text-sm leading-relaxed">{site.serviceAreas.join(' · ')}</p>
+            <p className="mt-6 font-mono text-xs uppercase tracking-widest text-brass">
+              Also in
+            </p>
+            <p className="mt-3 text-sm">Chennai</p>
           </div>
         </div>
 
