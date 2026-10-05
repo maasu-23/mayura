@@ -71,6 +71,77 @@ export const site = {
     ],
   },
 
+  /**
+   * PLACEHOLDER entries are not confirmed by the business — replace or
+   * remove before launch. Everything else here is already stated elsewhere
+   * in this file.
+   */
+  stats: [
+    { value: 10, suffix: '+', label: 'Years of experience' },
+    { value: 45, suffix: '', label: 'Days to move-in' },
+    { value: 14, suffix: '', label: 'Kerala districts served' },
+    // PLACEHOLDER: confirm the real number with the client.
+    { value: 100, suffix: '+', label: 'Homes completed' },
+  ],
+
+  testimonials: {
+    eyebrow: 'Client Words',
+    headline: 'Homes that feel like theirs',
+    // PLACEHOLDER: replace with real client quotes, names and locations.
+    items: [
+      {
+        quote:
+          'Placeholder testimonial. Replace this with a real quote from a Mayura client about the design, the finish or the move-in.',
+        name: 'Client Name',
+        place: 'City, Kerala',
+      },
+      {
+        quote:
+          'Placeholder testimonial. Replace this with a real quote from a Mayura client about the design, the finish or the move-in.',
+        name: 'Client Name',
+        place: 'City, Kerala',
+      },
+      {
+        quote:
+          'Placeholder testimonial. Replace this with a real quote from a Mayura client about the design, the finish or the move-in.',
+        name: 'Client Name',
+        place: 'Chennai',
+      },
+    ],
+  },
+
+  // PLACEHOLDER: confirm the real finish range with the client.
+  finishes: {
+    eyebrow: 'Finishes',
+    headline: 'Choose from every finish, not a short list',
+    items: ['Laminate', 'Veneer', 'Acrylic', 'PU Paint', 'Glass', 'Membrane', 'Fluted Panels', 'Marble-look'],
+  },
+
+  // PLACEHOLDER: replace with the real brands Mayura works with.
+  brands: {
+    eyebrow: 'Materials & Brands',
+    headline: 'Built with brands you know',
+    items: ['Brand One', 'Brand Two', 'Brand Three', 'Brand Four', 'Brand Five', 'Brand Six', 'Brand Seven', 'Brand Eight'],
+  },
+
+  // PLACEHOLDER: real tier names, prices and inclusions come from the client.
+  packages: {
+    eyebrow: 'Packages',
+    headline: 'A package for every home',
+    items: [
+      { name: 'Essential', price: 'Starting from ₹ X lakh', points: ['Placeholder inclusion', 'Placeholder inclusion', 'Placeholder inclusion'] },
+      { name: 'Signature', price: 'Starting from ₹ X lakh', points: ['Placeholder inclusion', 'Placeholder inclusion', 'Placeholder inclusion'], featured: true },
+      { name: 'Luxury', price: 'Starting from ₹ X lakh', points: ['Placeholder inclusion', 'Placeholder inclusion', 'Placeholder inclusion'] },
+    ],
+  },
+
+  // PLACEHOLDER: set a YouTube video id to enable the player.
+  video: {
+    eyebrow: 'See Our Work',
+    headline: 'Walk through a Mayura home',
+    youtubeId: '',
+  },
+
   cta: {
     headline: 'Ready to start your renovation?',
     sub: 'Tell us about the space. We will walk you through what is possible, what it costs, and how long it takes — before you commit to anything.',
