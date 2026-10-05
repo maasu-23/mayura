@@ -124,14 +124,14 @@ export const site = {
     items: ['Brand One', 'Brand Two', 'Brand Three', 'Brand Four', 'Brand Five', 'Brand Six', 'Brand Seven', 'Brand Eight'],
   },
 
-  // PLACEHOLDER: real tier names, prices and inclusions come from the client.
+  // Prices confirmed by the client. PLACEHOLDER: tier names and inclusions.
   packages: {
     eyebrow: 'Packages',
     headline: 'A package for every home',
     items: [
-      { name: 'Essential', price: 'Starting from ₹ X lakh', points: ['Placeholder inclusion', 'Placeholder inclusion', 'Placeholder inclusion'] },
-      { name: 'Signature', price: 'Starting from ₹ X lakh', points: ['Placeholder inclusion', 'Placeholder inclusion', 'Placeholder inclusion'], featured: true },
-      { name: 'Luxury', price: 'Starting from ₹ X lakh', points: ['Placeholder inclusion', 'Placeholder inclusion', 'Placeholder inclusion'] },
+      { name: 'Essential', price: '₹6.5 – 10 Lakh', points: ['Placeholder inclusion', 'Placeholder inclusion', 'Placeholder inclusion'] },
+      { name: 'Signature', price: '₹10 – 20 Lakh', points: ['Placeholder inclusion', 'Placeholder inclusion', 'Placeholder inclusion'], featured: true },
+      { name: 'Luxury', price: '₹20 Lakh & above', points: ['Placeholder inclusion', 'Placeholder inclusion', 'Placeholder inclusion'] },
     ],
   },
 
