@@ -5,11 +5,6 @@ import { EnquiryModal, type EnquirySubject } from './EnquiryModal';
 import { FillButton } from './FillButton';
 import { GradientBackdrop } from './GradientBackdrop';
 
-const CONSULTATION_SUBJECT: EnquirySubject = {
-  description: 'Free consultation — we will connect you on WhatsApp.',
-  message: "Hi, I'd like to book a free consultation.",
-};
-
 const CHAT_SUBJECT: EnquirySubject = {
   description: 'We will connect you on WhatsApp.',
   message: 'Hi, I have a question about Mayura Interiors.',
@@ -85,8 +80,8 @@ export function Hero() {
         </h1>
         <p className="mt-6 max-w-xl text-lg text-ink-dim">{site.hero.sub}</p>
         <div className="mt-10 flex flex-wrap gap-4">
-          <FillButton onClick={() => setEnquiring(CONSULTATION_SUBJECT)} solid>
-            {site.hero.cta}
+          <FillButton href={site.chennai.whatsapp} solid>
+            Chat with Tamil Nadu
           </FillButton>
           <FillButton onClick={() => setEnquiring(CHAT_SUBJECT)} solid>
             Chat with Kerala
