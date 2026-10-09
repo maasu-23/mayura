@@ -15,8 +15,8 @@ export function ClosingCTA() {
         <h2 className="text-3xl font-semibold text-paper md:text-4xl">{site.cta.headline}</h2>
         <p className="mt-4 text-paper/70">{site.cta.sub}</p>
         <div className="mt-10 flex flex-wrap justify-center gap-4">
-          <FillButton href={site.contacts[1].href} dark>
-            {site.hero.cta}
+          <FillButton href={site.chennai.whatsapp} dark>
+            Chat with Tamil Nadu
           </FillButton>
           <FillButton href={site.chennai.whatsapp} dark>
             {site.chennai.cta}
