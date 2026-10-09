@@ -60,7 +60,7 @@ export function Hero() {
             <span className="relative inline-flex h-3 w-3 rounded-full bg-brass" />
           </span>
           <span className="text-base font-semibold tracking-wide md:text-lg">
-            Now serving Tamil Nadu
+            Now open in Chennai
           </span>
           <span className="hidden text-sm text-paper/80 sm:inline">· {site.chennai.name}</span>
           <span aria-hidden className="transition-transform group-hover:translate-x-1">→</span>
