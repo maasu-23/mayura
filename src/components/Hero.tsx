@@ -73,8 +73,8 @@ export function Hero() {
         </h1>
         <p className="mt-6 max-w-xl text-lg text-ink-dim">{site.hero.sub}</p>
         <div className="mt-10 flex flex-wrap gap-4">
-          <FillButton href={site.contacts[1].href}>{site.hero.cta}</FillButton>
-          <FillButton href={site.chennai.whatsapp} solid>{site.chennai.cta}</FillButton>
+          <FillButton href={site.contacts[1].href} solid>{site.hero.cta}</FillButton>
+          <FillButton href={site.contacts[1].href} solid>Chat with Kerala</FillButton>
         </div>
       </motion.div>
     </section>

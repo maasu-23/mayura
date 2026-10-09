@@ -79,7 +79,7 @@ export const site = {
   stats: [
     { value: 10, suffix: '+', label: 'Years of experience' },
     { value: 45, suffix: '', label: 'Days to move-in' },
-    { value: 14, suffix: '', label: 'Kerala districts served' },
+    { value: 2, suffix: '', label: 'States served' },
     // PLACEHOLDER: confirm the real number with the client.
     { value: 100, suffix: '+', label: 'Homes completed' },
   ],
