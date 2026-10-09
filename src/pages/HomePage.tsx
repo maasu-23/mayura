@@ -7,7 +7,6 @@ import { Stats } from '../components/Stats';
 import { CategoryTabs } from '../components/CategoryTabs';
 import { Testimonials } from '../components/Testimonials';
 import { Finishes } from '../components/Finishes';
-import { BrandCarousel } from '../components/BrandCarousel';
 import { Packages } from '../components/Packages';
 import { VideoSection } from '../components/VideoSection';
 import { ClosingCTA } from '../components/ClosingCTA';
@@ -24,7 +23,6 @@ export function HomePage() {
       <VideoSection />
       <HowItWorks />
       <Finishes />
-      <BrandCarousel />
       <Credentials />
       <Testimonials />
       <ClosingCTA />

@@ -117,13 +117,6 @@ export const site = {
     items: ['Laminate', 'Veneer', 'Acrylic', 'PU Paint', 'Glass', 'Membrane', 'Fluted Panels', 'Marble-look'],
   },
 
-  // PLACEHOLDER: replace with the real brands Mayura works with.
-  brands: {
-    eyebrow: 'Materials & Brands',
-    headline: 'Built with brands you know',
-    items: ['Brand One', 'Brand Two', 'Brand Three', 'Brand Four', 'Brand Five', 'Brand Six', 'Brand Seven', 'Brand Eight'],
-  },
-
   // Prices confirmed by the client. PLACEHOLDER: tier names and inclusions.
   packages: {
     eyebrow: 'Packages',
