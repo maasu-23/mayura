@@ -1,6 +1,12 @@
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { site } from '../data/site';
+import { EnquiryModal, type EnquirySubject } from './EnquiryModal';
+
+const CONSULTATION_SUBJECT: EnquirySubject = {
+  description: 'Free consultation — we will connect you on WhatsApp.',
+  message: "Hi, I'd like to book a free consultation.",
+};
 
 const LINKS = [
   { href: '/about', label: 'About' },
@@ -13,6 +19,7 @@ const LINKS = [
 export function NavBar() {
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
+  const [enquiring, setEnquiring] = useState<EnquirySubject | null>(null);
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 8);
@@ -57,12 +64,13 @@ export function NavBar() {
             </li>
           ))}
         </ul>
-        <a
-          href={site.contacts[1].href}
+        <button
+          type="button"
+          onClick={() => setEnquiring(CONSULTATION_SUBJECT)}
           className="hidden rounded-full bg-peacock px-6 py-3 text-sm font-medium text-paper transition-colors hover:bg-peacock-dim md:inline-block"
         >
           {site.hero.cta}
-        </a>
+        </button>
         <button
           type="button"
           onClick={() => setMenuOpen((open) => !open)}
@@ -105,15 +113,20 @@ export function NavBar() {
               </li>
             ))}
           </ul>
-          <a
-            href={site.contacts[1].href}
-            onClick={() => setMenuOpen(false)}
-            className="mt-4 block rounded-full bg-peacock px-6 py-3 text-center text-sm font-medium text-paper transition-colors hover:bg-peacock-dim"
+          <button
+            type="button"
+            onClick={() => {
+              setMenuOpen(false);
+              setEnquiring(CONSULTATION_SUBJECT);
+            }}
+            className="mt-4 block w-full rounded-full bg-peacock px-6 py-3 text-center text-sm font-medium text-paper transition-colors hover:bg-peacock-dim"
           >
             {site.hero.cta}
-          </a>
+          </button>
         </div>
       )}
+
+      <EnquiryModal subject={enquiring} onClose={() => setEnquiring(null)} />
     </header>
   );
 }

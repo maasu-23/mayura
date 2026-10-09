@@ -1,26 +1,32 @@
 import { AnimatePresence, motion } from 'framer-motion';
 import { site } from '../data/site';
 
+export type EnquirySubject = {
+  description: string;
+  message: string;
+};
+
 type Props = {
-  packageName: string | null;
+  subject: EnquirySubject | null;
   onClose: () => void;
 };
 
 /**
- * Package "Enquire" buttons are ambiguous about which location the lead is
- * for, so this asks before handing off to WhatsApp rather than guessing.
+ * Enquiry buttons across the site are ambiguous about which location the
+ * lead is for, so this asks before handing off to WhatsApp rather than
+ * guessing.
  */
-export function EnquiryModal({ packageName, onClose }: Props) {
-  const message = packageName ? `Hi, I'm interested in the ${packageName} package.` : '';
-
-  const destinations = [
-    { label: 'Kerala', href: `${site.contacts[1].href}?text=${encodeURIComponent(message)}` },
-    { label: 'Tamil Nadu', href: `${site.chennai.whatsapp}?text=${encodeURIComponent(message)}` },
-  ];
+export function EnquiryModal({ subject, onClose }: Props) {
+  const destinations = subject
+    ? [
+        { label: 'Kerala', href: `${site.contacts[1].href}?text=${encodeURIComponent(subject.message)}` },
+        { label: 'Tamil Nadu', href: `${site.chennai.whatsapp}?text=${encodeURIComponent(subject.message)}` },
+      ]
+    : [];
 
   return (
     <AnimatePresence>
-      {packageName && (
+      {subject && (
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
@@ -38,9 +44,7 @@ export function EnquiryModal({ packageName, onClose }: Props) {
             onClick={(e) => e.stopPropagation()}
           >
             <h3 className="text-lg font-semibold text-ink">Which location is this for?</h3>
-            <p className="mt-2 text-sm text-ink-dim">
-              {packageName} package — we will connect you on WhatsApp.
-            </p>
+            <p className="mt-2 text-sm text-ink-dim">{subject.description}</p>
             <div className="mt-6 flex flex-col gap-3">
               {destinations.map((d) => (
                 <a
