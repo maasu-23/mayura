@@ -11,7 +11,7 @@ export const site = {
 
   hero: {
     headline: 'Interiors built around how you actually live',
-    sub: 'We design and build homes across Kerala and now in Chennai. Two services, one standard of finish, every detail decided with you.',
+    sub: 'We design and build homes across Kerala and Tamil Nadu. Two services, one standard of finish, every detail decided with you.',
     cta: 'Book Free Consultation',
   },
 
@@ -181,5 +181,17 @@ export const site = {
     'Wayanad',
     'Kannur',
     'Kasaragod',
+  ],
+
+  /** Placeholder list — confirm actual Tamil Nadu coverage with the business. */
+  tamilNaduAreas: [
+    'Coimbatore',
+    'Madurai',
+    'Tiruchirappalli',
+    'Salem',
+    'Tirunelveli',
+    'Erode',
+    'Vellore',
+    'Thanjavur',
   ],
 } as const;

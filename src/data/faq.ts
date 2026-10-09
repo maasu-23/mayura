@@ -10,7 +10,7 @@ export const faq: Faq[] = [
   },
   {
     q: 'Which areas do you serve?',
-    a: 'We work across all of Kerala, not just a single city.',
+    a: 'We work across all of Kerala, and now in Chennai and Tamil Nadu too — not just a single city.',
   },
   {
     q: 'Where are the wardrobes and kitchens made?',

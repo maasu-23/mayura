@@ -73,6 +73,10 @@ export function Footer() {
             </p>
             <p className="mt-3 text-sm leading-relaxed">{site.serviceAreas.join(' · ')}</p>
             <p className="mt-6 font-mono text-xs uppercase tracking-widest text-brass">
+              Serving all of Tamil Nadu
+            </p>
+            <p className="mt-3 text-sm leading-relaxed">{site.tamilNaduAreas.join(' · ')}</p>
+            <p className="mt-6 font-mono text-xs uppercase tracking-widest text-brass">
               Also in
             </p>
             <p className="mt-3 text-sm">Chennai</p>

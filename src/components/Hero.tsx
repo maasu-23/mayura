@@ -60,13 +60,13 @@ export function Hero() {
             <span className="relative inline-flex h-3 w-3 rounded-full bg-brass" />
           </span>
           <span className="text-base font-semibold tracking-wide md:text-lg">
-            Now open in Chennai
+            Now serving Tamil Nadu
           </span>
           <span className="hidden text-sm text-paper/80 sm:inline">· {site.chennai.name}</span>
           <span aria-hidden className="transition-transform group-hover:translate-x-1">→</span>
         </a>
         <p className="mt-6 font-mono text-xs uppercase tracking-[0.3em] text-peacock-dim">
-          {site.region} · Chennai · Residential Interiors
+          {site.region} · Tamil Nadu · Residential Interiors
         </p>
         <h1 className="mt-4 max-w-3xl text-5xl font-semibold leading-[1.05] tracking-tight text-ink md:text-7xl">
           {site.hero.headline}
