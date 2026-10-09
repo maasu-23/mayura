@@ -46,7 +46,7 @@ export const site = {
     items: [
       {
         title: '10+ years',
-        body: 'A decade of residential interior and renovation work, across Kerala.',
+        body: 'A decade of residential interior and renovation work, across Kerala and Tamil Nadu.',
       },
       {
         title: 'Our own factory',
@@ -66,7 +66,7 @@ export const site = {
       },
       {
         title: 'Happy Homes',
-        body: 'Real families living in the spaces we have designed and built, across Kerala.',
+        body: 'Real families living in the spaces we have designed and built, across Kerala and Tamil Nadu.',
       },
     ],
   },
